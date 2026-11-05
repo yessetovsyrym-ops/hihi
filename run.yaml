@@ -5,6 +5,9 @@ metadata:
 spec:
   pipelineRef:
     name: web-app-pipeline
+  params:
+    - name: repo-url
+      value: https://github.com/yessetovsyrym-ops/hihi
   workspaces:
     - name: shared-workspace
       volumeClaimTemplate:
