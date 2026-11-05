@@ -20,3 +20,11 @@ spec:
       workspaces:
         - name: source
           workspace: shared-workspace
+    - name: build-app
+      taskRef:
+        name: npm
+      runAfter:
+        - run-tests
+      workspaces:
+        - name: source
+          workspace: shared-workspace
